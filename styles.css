@@ -1,0 +1,124 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  background-image: url("./images/back-roses.jpg");
+  background-size: cover;
+}
+header {
+  display: flex;
+  width: 80%;
+  height: 5vh;
+  margin: auto;
+  align-items: center;
+}
+.logo-container,
+.nav-links,
+.yes {
+  display: flex;
+}
+.logo-container {
+  flex: 1;
+  align-items: center;
+}
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+nav {
+  flex: 1;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+.yes {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.introduction {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.main {
+  flex: 1;
+}
+
+.main-title h3 {
+  font-size: 44px;
+  font-weight: 500px;
+  color: black;
+}
+
+.btns {
+  padding: 50px 0px 0px 0px;
+}
+.btnSi {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  font-size: 20px;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.btnNo {
+  background: #c36cbb;
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.cover img {
+  animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .introduction {
+    flex-direction: column;
+  }
+  .main {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .cover {
+    padding: 10px 0px 0px 0px;
+    justify-content: center;
+  }
+}
